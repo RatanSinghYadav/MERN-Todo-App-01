@@ -26,7 +26,7 @@ function Register() {
     let addUser = async (e) => {
         e.preventDefault();
         const { name, email, age, job, number } = data;
-        const res = await fetch("http://localhost:5000/register", {
+        const res = await fetch("https://mern-todo-app-x5yo.onrender.com/register", {
             method: "POST",
             headers: {
                 "Accept": "application/json",

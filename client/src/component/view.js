@@ -10,7 +10,7 @@ function View() {
     const { id } = useParams("");
 
     const getData = async () => {
-        const res = await fetch(`http://localhost:5000/getuser/${id}`, {
+        const res = await fetch(`https://mern-todo-app-x5yo.onrender.com/getuser/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -26,7 +26,7 @@ function View() {
 
 
     const deleteUser = async(id)=> {
-        const res2 = await fetch(`http://localhost:5000/deleteuser/${id}`, {
+        const res2 = await fetch(`https://mern-todo-app-x5yo.onrender.com/deleteuser/${id}`, {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json'

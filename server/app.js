@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(route);
 
+// console.log(process.env);
 
 
 app.listen(port,()=>{

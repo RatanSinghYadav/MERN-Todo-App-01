@@ -29,7 +29,7 @@ function Edit() {
     const navigate = useNavigate();
 
     const getData = async () => {
-        const res = await fetch(`http://localhost:5000/getuser/${id}`, {
+        const res = await fetch(`https://mern-todo-app-x5yo.onrender.com/getuser/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -48,7 +48,7 @@ function Edit() {
     const updateData = async (e) => {
         e.preventDefault();
         const { name, email, age, job, number } = data;
-        const res2 = await fetch(`http://localhost:5000/edituser/${id}`, {
+        const res2 = await fetch(`https://mern-todo-app-x5yo.onrender.com/edituser/${id}`, {
             method: 'PATCH',
             headers: {
                 "Accept": 'application/json',
